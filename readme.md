@@ -28,7 +28,7 @@ bash first-build.sh
 ```
 bash app_serve.sh
 ```
-Then you can visit the with http://localhost (or http://127.0.0.1)
+Then you can visit the app with http://localhost (or http://127.0.0.1)
 
 ### Stop the server
 ```
