@@ -8,7 +8,7 @@
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>Laravel Ecommerce | @yield('title', '')</title>
+        <title>軟測模擬 | @yield('title', '')</title>
 
         <link href="/img/favicon.ico" rel="SHORTCUT ICON" />
 
@@ -28,8 +28,6 @@
     @include('partials.nav')
 
     @yield('content')
-
-    @include('partials.footer')
 
     @yield('extra-js')
 

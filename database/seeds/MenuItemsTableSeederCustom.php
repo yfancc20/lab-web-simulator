@@ -330,21 +330,21 @@ class MenuItemsTableSeederCustom extends Seeder
                 ])->save();
             }
 
-            $menuItem = MenuItem::firstOrNew([
-                'menu_id' => $menu->id,
-                'title'   => 'Blog',
-                'url'     => 'https://blog.laravelecommerceexample.ca',
-                'route'   => null,
-            ]);
-            if (!$menuItem->exists) {
-                $menuItem->fill([
-                    'target'     => '_self',
-                    'icon_class' => null,
-                    'color'      => null,
-                    'parent_id'  => null,
-                    'order'      => 2,
-                ])->save();
-            }
+            // $menuItem = MenuItem::firstOrNew([
+            //     'menu_id' => $menu->id,
+            //     'title'   => 'Blog',
+            //     'url'     => 'https://blog.laravelecommerceexample.ca',
+            //     'route'   => null,
+            // ]);
+            // if (!$menuItem->exists) {
+            //     $menuItem->fill([
+            //         'target'     => '_self',
+            //         'icon_class' => null,
+            //         'color'      => null,
+            //         'parent_id'  => null,
+            //         'order'      => 2,
+            //     ])->save();
+            // }
 
             /*
             |--------------------------------------------------------------------------

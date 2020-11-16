@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Sign Up for an Account')
+@section('title', '註冊新帳戶')
 
 @section('content')
 <div class="container">
@@ -19,26 +19,26 @@
                 </ul>
             </div>
             @endif
-            <h2>Create Account</h2>
+            <h2>註冊新帳戶</h2>
             <div class="spacer"></div>
 
             <form method="POST" action="{{ route('register') }}">
                 {{ csrf_field() }}
 
-                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" placeholder="Name" required autofocus>
+                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" placeholder="使用者名稱" required autofocus>
 
-                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="Email" required>
+                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="信箱" required>
 
-                <input id="password" type="password" class="form-control" name="password" placeholder="Password" placeholder="Password" required>
+                <input id="password" type="password" class="form-control" name="password" placeholder="密碼" required>
 
-                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Confirm Password"
+                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="密碼再確認"
                     required>
 
                 <div class="login-container">
-                    <button type="submit" class="auth-button">Create Account</button>
+                    <button type="submit" class="auth-button">繼續</button>
                     <div class="already-have-container">
-                        <p><strong>Already have an account?</strong></p>
-                        <a href="{{ route('login') }}">Login</a>
+                        <p><strong>已經有帳戶？</strong></p>
+                        <a href="{{ route('login') }}">登入</a>
                     </div>
                 </div>
 
@@ -46,15 +46,15 @@
         </div>
 
         <div class="auth-right">
-            <h2>New Customer</h2>
+            <h2>用戶規定</h2>
             <div class="spacer"></div>
-            <p><strong>Save time now.</strong></p>
-            <p>Creating an account will allow you to checkout faster in the future, have easy access to order history and customize your experience to suit your preferences.</p>
+            <p><strong>以下複製網路的</strong></p>
+            <p> 參加者必須遵守momo購物網的服務條款、使用規範及其他交易有關之規定</p>
 
             &nbsp;
             <div class="spacer"></div>
-            <p><strong>Loyalty Program</strong></p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt debitis, amet magnam accusamus nisi distinctio eveniet ullam. Facere, cumque architecto.</p>
+            <p><strong>註冊流程</strong></p>
+            <p>註冊及移動帳號流程。註冊流程更簡單，移動流程更順暢，帳戶資訊更安全。</p>
         </div>
     </div> <!-- end auth-pages -->
 </div>

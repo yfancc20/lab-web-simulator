@@ -134,17 +134,17 @@ class EcommerceInstall extends Command
             '--force' => true,
         ]);
 
-        try {
-            $this->call('scout:clear', [
-                'model' => 'App\\Product',
-            ]);
+        // try {
+        //     $this->call('scout:clear', [
+        //         'model' => 'App\\Product',
+        //     ]);
 
-            $this->call('scout:import', [
-                'model' => 'App\\Product',
-            ]);
-        } catch (\Exception $e) {
-            $this->error('Algolia credentials incorrect. Check your .env file. Make sure ALGOLIA_APP_ID and ALGOLIA_SECRET are correct.');
-        }
+        //     $this->call('scout:import', [
+        //         'model' => 'App\\Product',
+        //     ]);
+        // } catch (\Exception $e) {
+        //     $this->error('Algolia credentials incorrect. Check your .env file. Make sure ALGOLIA_APP_ID and ALGOLIA_SECRET are correct.');
+        // }
 
         $this->info('Dummy data installed');
     }
